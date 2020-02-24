@@ -45,8 +45,11 @@
     </rect>
    </property>
    <widget class="QMenu" name="menu_file">
+    <property name="locale">
+     <locale language="English" country="UnitedStates"/>
+    </property>
     <property name="title">
-     <string>&amp;Файл</string>
+     <string>&amp;File</string>
     </property>
     <addaction name="action_new"/>
     <addaction name="action_open"/>
@@ -59,8 +62,11 @@
     <addaction name="action_quit"/>
    </widget>
    <widget class="QMenu" name="menu_help">
+    <property name="locale">
+     <locale language="English" country="UnitedStates"/>
+    </property>
     <property name="title">
-     <string>Справка</string>
+     <string>&amp;Help</string>
     </property>
     <addaction name="action_help"/>
     <addaction name="action_about"/>
@@ -87,7 +93,7 @@
   </widget>
   <action name="action_help">
    <property name="text">
-    <string>&amp;Справка по Редактиро текста ММН</string>
+    <string>&amp;Mike's text editor help</string>
    </property>
    <property name="shortcut">
     <string>F1</string>
@@ -95,12 +101,12 @@
   </action>
   <action name="action_about">
    <property name="text">
-    <string>&amp;О программе</string>
+    <string>&amp;About</string>
    </property>
   </action>
   <action name="action_new">
    <property name="text">
-    <string>&amp;Новый</string>
+    <string>&amp;New</string>
    </property>
    <property name="shortcut">
     <string>Ctrl+N</string>
@@ -108,7 +114,7 @@
   </action>
   <action name="action_open">
    <property name="text">
-    <string>&amp;Открыть</string>
+    <string>&amp;Open</string>
    </property>
    <property name="shortcut">
     <string>Ctrl+O</string>
@@ -116,12 +122,12 @@
   </action>
   <action name="action_close">
    <property name="text">
-    <string>&amp;Закрыть</string>
+    <string>&amp;Close</string>
    </property>
   </action>
   <action name="action_save">
    <property name="text">
-    <string>&amp;Сохранить</string>
+    <string>&amp;Save</string>
    </property>
    <property name="shortcut">
     <string>Ctrl+S</string>
@@ -129,7 +135,7 @@
   </action>
   <action name="action_save_as">
    <property name="text">
-    <string>Сохранить &amp;как...</string>
+    <string>Save &amp;as...</string>
    </property>
    <property name="shortcut">
     <string>Ctrl+Shift+S</string>
@@ -137,7 +143,7 @@
   </action>
   <action name="action_quit">
    <property name="text">
-    <string>&amp;Выход</string>
+    <string>&amp;Quit</string>
    </property>
   </action>
   <action name="actiontoolbar_new">
