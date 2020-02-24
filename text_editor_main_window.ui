@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Редактор текста ММН</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QGridLayout" name="gridLayout">
+    <property name="leftMargin">
+     <number>0</number>
+    </property>
+    <property name="topMargin">
+     <number>0</number>
+    </property>
+    <property name="rightMargin">
+     <number>0</number>
+    </property>
+    <property name="bottomMargin">
+     <number>0</number>
+    </property>
+    <property name="spacing">
+     <number>6</number>
+    </property>
+    <item row="0" column="0">
+     <widget class="QTextEdit" name="textEdit"/>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>800</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menu_file">
+    <property name="title">
+     <string>&amp;Файл</string>
+    </property>
+    <addaction name="action_new"/>
+    <addaction name="action_open"/>
+    <addaction name="separator"/>
+    <addaction name="action_close"/>
+    <addaction name="separator"/>
+    <addaction name="action_save"/>
+    <addaction name="action_save_as"/>
+    <addaction name="separator"/>
+    <addaction name="action_quit"/>
+   </widget>
+   <widget class="QMenu" name="menu_help">
+    <property name="title">
+     <string>Справка</string>
+    </property>
+    <addaction name="action_help"/>
+    <addaction name="action_about"/>
+   </widget>
+   <addaction name="menu_file"/>
+   <addaction name="menu_help"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <widget class="QToolBar" name="toolBar">
+   <property name="windowTitle">
+    <string>toolBar</string>
+   </property>
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+   <addaction name="actiontoolbar_new"/>
+   <addaction name="actiontoolbar_open"/>
+   <addaction name="actiontoolbar_close"/>
+   <addaction name="actiontoolbar_save"/>
+   <addaction name="separator"/>
+  </widget>
+  <action name="action_help">
+   <property name="text">
+    <string>&amp;Справка по Редактиро текста ММН</string>
+   </property>
+   <property name="shortcut">
+    <string>F1</string>
+   </property>
+  </action>
+  <action name="action_about">
+   <property name="text">
+    <string>&amp;О программе</string>
+   </property>
+  </action>
+  <action name="action_new">
+   <property name="text">
+    <string>&amp;Новый</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+N</string>
+   </property>
+  </action>
+  <action name="action_open">
+   <property name="text">
+    <string>&amp;Открыть</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+O</string>
+   </property>
+  </action>
+  <action name="action_close">
+   <property name="text">
+    <string>&amp;Закрыть</string>
+   </property>
+  </action>
+  <action name="action_save">
+   <property name="text">
+    <string>&amp;Сохранить</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+S</string>
+   </property>
+  </action>
+  <action name="action_save_as">
+   <property name="text">
+    <string>Сохранить &amp;как...</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+Shift+S</string>
+   </property>
+  </action>
+  <action name="action_quit">
+   <property name="text">
+    <string>&amp;Выход</string>
+   </property>
+  </action>
+  <action name="actiontoolbar_new">
+   <property name="icon">
+    <iconset>
+     <normaloff>resources/ico/040-folder.png</normaloff>resources/ico/040-folder.png</iconset>
+   </property>
+   <property name="text">
+    <string>toolbar_new</string>
+   </property>
+   <property name="toolTip">
+    <string>Создать новый файл</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+N</string>
+   </property>
+  </action>
+  <action name="actiontoolbar_open">
+   <property name="icon">
+    <iconset>
+     <normaloff>resources/ico/035-folder-5.png</normaloff>resources/ico/035-folder-5.png</iconset>
+   </property>
+   <property name="text">
+    <string>toolbar_open</string>
+   </property>
+   <property name="toolTip">
+    <string>Открыть файл</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+O</string>
+   </property>
+  </action>
+  <action name="actiontoolbar_close">
+   <property name="icon">
+    <iconset>
+     <normaloff>resources/ico/039-folder-1.png</normaloff>resources/ico/039-folder-1.png</iconset>
+   </property>
+   <property name="text">
+    <string>toolbar_close</string>
+   </property>
+   <property name="toolTip">
+    <string>Закрыть файл</string>
+   </property>
+  </action>
+  <action name="actiontoolbar_save">
+   <property name="icon">
+    <iconset>
+     <normaloff>resources/ico/006-folder-34.png</normaloff>resources/ico/006-folder-34.png</iconset>
+   </property>
+   <property name="text">
+    <string>toolbar_save</string>
+   </property>
+   <property name="toolTip">
+    <string>Сохранить файл</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+S</string>
+   </property>
+  </action>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
